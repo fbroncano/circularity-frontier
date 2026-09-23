@@ -1,0 +1,186 @@
+[ok] grid 378 combos -> results/resumen_grid_sensibilidad.csv
+====================================================================================================
+RESULTADOS BASE  (v_op=12 €/t, F=2500 €, EF1=60 g/t·km, E_PLANT=2 kg/t, EF3=1.30 kg/t, dot=0.5 t/hab·año)
+PARAMETROS v2: EF5_NA=4 kg/t (placeholder, rango 2-8), rec_share_base=0.6, rec_share_onsite=0.85, CAP_ANUAL_T=200,000 t/año
+Métricas regionales ponderadas por población: Coste_regional = Σ LC_m·pop_m (€/año); CO2_regional = Σ CE_m·pop_m/1000 (t/año), NETO de credito EF5 (diferencial).
+Municipios: 383; población total: 1,102,410 hab; plantas/cuencas (clusters S3): 32.
+
+--- p = 10% ---
+Escenario |   Coste regional |  CO2 regional | n on-site | mejoran ≥1 eje | perdedores | vol on-site t
+S0        |      10.06 M€/año |      2,517 t/año |         — |             — |          — |             —
+S1        |      10.67 M€/año |      2,282 t/año |  383/383 |         383 |        357 |      55,120
+S2        |       9.96 M€/año |      2,442 t/año |   26/383 |          26 |          0 |      15,022
+S2_cap    |       9.96 M€/año |      2,442 t/año |   26/383 |          26 |          0 |      15,022
+S3        |       9.77 M€/año |      2,344 t/año |  355/383 |         355 |          0 |      36,932
+  -> S2: on-site en 26 municipios (6.8 %), volumen 15,022 t/año; perdedores S2 = 0; perdedores S1 = 357
+  -> S2_cap (CAP=200,000 t): on-site 26, volumen 15,022 t/año, perdedores 0 — NO VINCULA
+  -> S3 (F compartido por cluster): on-site 355 (+329 municipios vs S2), perdedores 0
+  -> Delta coste S2−S0 = -94,553 €/año; S3−S0 = -288,216; S1−S0 = +613,094; S2_cap−S0 = -94,553
+  -> Delta CO2 S2−S0 = -75 t/año; S3−S0 = -173; S1−S0 = -235; S2_cap−S0 = -75
+
+--- p = 20% ---
+Escenario |   Coste regional |  CO2 regional | n on-site | mejoran ≥1 eje | perdedores | vol on-site t
+S0        |      10.06 M€/año |      2,517 t/año |         — |             — |          — |             —
+S1        |      10.33 M€/año |      2,047 t/año |  383/383 |         383 |        319 |     110,241
+S2        |       9.77 M€/año |      2,301 t/año |   64/383 |          64 |          0 |      43,960
+S2_cap    |       9.77 M€/año |      2,301 t/año |   64/383 |          64 |          0 |      43,960
+S3        |       9.42 M€/año |      2,160 t/año |  370/383 |         370 |          0 |      77,493
+  -> S2: on-site en 64 municipios (16.7 %), volumen 43,960 t/año; perdedores S2 = 0; perdedores S1 = 319
+  -> S2_cap (CAP=200,000 t): on-site 64, volumen 43,960 t/año, perdedores 0 — NO VINCULA
+  -> S3 (F compartido por cluster): on-site 370 (+306 municipios vs S2), perdedores 0
+  -> Delta coste S2−S0 = -287,170 €/año; S3−S0 = -642,129; S1−S0 = +268,688; S2_cap−S0 = -287,170
+  -> Delta CO2 S2−S0 = -216 t/año; S3−S0 = -357; S1−S0 = -470; S2_cap−S0 = -216
+
+--- p = 30% ---
+Escenario |   Coste regional |  CO2 regional | n on-site | mejoran ≥1 eje | perdedores | vol on-site t
+S0        |      10.06 M€/año |      2,517 t/año |         — |             — |          — |             —
+S1        |       9.98 M€/año |      1,812 t/año |  383/383 |         383 |        272 |     165,362
+S2        |       9.52 M€/año |      2,121 t/año |  111/383 |         111 |          0 |      82,786
+S2_cap    |       9.52 M€/año |      2,121 t/año |  111/383 |         111 |          0 |      82,786
+S3        |       9.06 M€/año |      1,976 t/año |  373/383 |         373 |          0 |     118,052
+  -> S2: on-site en 111 municipios (29.0 %), volumen 82,786 t/año; perdedores S2 = 0; perdedores S1 = 272
+  -> S2_cap (CAP=200,000 t): on-site 111, volumen 82,786 t/año, perdedores 0 — NO VINCULA
+  -> S3 (F compartido por cluster): on-site 373 (+262 municipios vs S2), perdedores 0
+  -> Delta coste S2−S0 = -540,500 €/año; S3−S0 = -997,600; S1−S0 = -75,718; S2_cap−S0 = -540,500
+  -> Delta CO2 S2−S0 = -396 t/año; S3−S0 = -541; S1−S0 = -706; S2_cap−S0 = -396
+
+--- p = 40% ---
+Escenario |   Coste regional |  CO2 regional | n on-site | mejoran ≥1 eje | perdedores | vol on-site t
+S0        |      10.06 M€/año |      2,517 t/año |         — |             — |          — |             —
+S1        |       9.64 M€/año |      1,576 t/año |  383/383 |         383 |        244 |     220,482
+S2        |       9.23 M€/año |      1,954 t/año |  139/383 |         139 |          0 |     117,975
+S2_cap    |       9.23 M€/año |      1,954 t/año |  139/383 |         139 |          0 |     117,975
+S3        |       8.71 M€/año |      1,793 t/año |  375/383 |         375 |          0 |     158,568
+  -> S2: on-site en 139 municipios (36.3 %), volumen 117,975 t/año; perdedores S2 = 0; perdedores S1 = 244
+  -> S2_cap (CAP=200,000 t): on-site 139, volumen 117,975 t/año, perdedores 0 — NO VINCULA
+  -> S3 (F compartido por cluster): on-site 375 (+236 municipios vs S2), perdedores 0
+  -> Delta coste S2−S0 = -823,531 €/año; S3−S0 = -1,353,460; S1−S0 = -420,124; S2_cap−S0 = -823,531
+  -> Delta CO2 S2−S0 = -563 t/año; S3−S0 = -724; S1−S0 = -941; S2_cap−S0 = -563
+
+--- p = 50% ---
+Escenario |   Coste regional |  CO2 regional | n on-site | mejoran ≥1 eje | perdedores | vol on-site t
+S0        |      10.06 M€/año |      2,517 t/año |         — |             — |          — |             —
+S1        |       9.29 M€/año |      1,341 t/año |  383/383 |         383 |        206 |     275,602
+S2        |       8.93 M€/año |      1,750 t/año |  177/383 |         177 |          0 |     163,122
+S2_cap    |       8.93 M€/año |      1,750 t/año |  177/383 |         177 |          0 |     163,122
+S3        |       8.35 M€/año |      1,607 t/año |  377/383 |         377 |          0 |     199,990
+  -> S2: on-site en 177 municipios (46.2 %), volumen 163,122 t/año; perdedores S2 = 0; perdedores S1 = 206
+  -> S2_cap (CAP=200,000 t): on-site 177, volumen 163,122 t/año, perdedores 0 — NO VINCULA
+  -> S3 (F compartido por cluster): on-site 377 (+200 municipios vs S2), perdedores 0
+  -> Delta coste S2−S0 = -1,129,396 €/año; S3−S0 = -1,709,795; S1−S0 = -764,531; S2_cap−S0 = -1,129,396
+  -> Delta CO2 S2−S0 = -767 t/año; S3−S0 = -910; S1−S0 = -1,176; S2_cap−S0 = -767
+
+--- p = 60% ---
+Escenario |   Coste regional |  CO2 regional | n on-site | mejoran ≥1 eje | perdedores | vol on-site t
+S0        |      10.06 M€/año |      2,517 t/año |         — |             — |          — |             —
+S1        |       8.95 M€/año |      1,106 t/año |  383/383 |         383 |        183 |     330,723
+S2        |       8.61 M€/año |      1,567 t/año |  200/383 |         200 |          0 |     202,481
+S2_cap    |       8.61 M€/año |      1,575 t/año |  197/383 |         197 |          0 |     199,979
+S3        |       7.99 M€/año |      1,425 t/año |  377/383 |         377 |          0 |     239,987
+  -> S2: on-site en 200 municipios (52.2 %), volumen 202,481 t/año; perdedores S2 = 0; perdedores S1 = 183
+  -> S2_cap (CAP=200,000 t): on-site 197, volumen 199,979 t/año, perdedores 0 — VINCULA la capacidad
+  -> S3 (F compartido por cluster): on-site 377 (+177 municipios vs S2), perdedores 0
+  -> Delta coste S2−S0 = -1,449,772 €/año; S3−S0 = -2,066,302; S1−S0 = -1,108,937; S2_cap−S0 = -1,449,171
+  -> Delta CO2 S2−S0 = -950 t/año; S3−S0 = -1,092; S1−S0 = -1,411; S2_cap−S0 = -942
+
+--- p = 70% ---
+Escenario |   Coste regional |  CO2 regional | n on-site | mejoran ≥1 eje | perdedores | vol on-site t
+S0        |      10.06 M€/año |      2,517 t/año |         — |             — |          — |             —
+S1        |       8.61 M€/año |        871 t/año |  383/383 |         383 |        171 |     385,844
+S2        |       8.28 M€/año |      1,386 t/año |  212/383 |         212 |          0 |     241,706
+S2_cap    |       8.34 M€/año |      1,532 t/año |  185/383 |         185 |          0 |     199,950
+S3        |       7.64 M€/año |      1,243 t/año |  377/383 |         377 |          0 |     279,985
+  -> S2: on-site en 212 municipios (55.4 %), volumen 241,706 t/año; perdedores S2 = 0; perdedores S1 = 171
+  -> S2_cap (CAP=200,000 t): on-site 185, volumen 199,950 t/año, perdedores 0 — VINCULA la capacidad
+  -> S3 (F compartido por cluster): on-site 377 (+165 municipios vs S2), perdedores 0
+  -> Delta coste S2−S0 = -1,776,821 €/año; S3−S0 = -2,422,809; S1−S0 = -1,453,343; S2_cap−S0 = -1,719,669
+  -> Delta CO2 S2−S0 = -1,131 t/año; S3−S0 = -1,275; S1−S0 = -1,646; S2_cap−S0 = -985
+[ok] base municipal p=10% -> results/base_municipios_p010.csv
+[ok] base municipal p=20% -> results/base_municipios_p020.csv
+[ok] base municipal p=30% -> results/base_municipios_p030.csv
+[ok] base municipal p=40% -> results/base_municipios_p040.csv
+[ok] base municipal p=50% -> results/base_municipios_p050.csv
+[ok] base municipal p=60% -> results/base_municipios_p060.csv
+[ok] base municipal p=70% -> results/base_municipios_p070.csv
+====================================================================================================
+ROBUSTEZ (grid completo: 378 combinaciones; rec_share 0.6/0.85, CAP 200,000, EF5_NA 4)
+Ahorro de coste S2 vs S0 : 24,946 – 3,501,130 €/año (0.02–3.50 M€/año)
+Aumento de coste S1 vs S0 : -3,475,467 – 1,901,317 €/año (min -3.48 M€/año, max +1.90 M€/año)
+Perdedores de coste en S1 : 52 – 381 municipios
+Ahorro CO2 S1 vs S0 : 178 – 2,444 t/año;  S2 vs S0: 14 – 2,422 t/año; S3 vs S0: 62 – 2,444 t/año
+
+Chequeo de la conclusión cualitativa en el grid (378 combos):
+  [SE MANTIENE en todo el grid] S2 más barato que S1 (Coste_S2 <= Coste_S1)
+  [SE MANTIENE en todo el grid] S2 sin perdedores de coste
+  [SE MANTIENE en todo el grid] S1 logra el menor CO2 (CO2_S1 <= CO2_S2)
+  [SE MANTIENE en todo el grid] S1 tiene perdedores (n_perdedores_S1 > 0)
+  [SE MANTIENE en todo el grid] S2 mejora coste regional (Coste_S2 < Coste_S0)
+  [se DEBILITA en 168 combos] S1 encarece regionalmente (Coste_S1 > Coste_S0)
+      -> v_op=8, F=1250, EF1=30, p=0.1
+      -> v_op=8, F=1250, EF1=30, p=0.2
+      -> v_op=8, F=1250, EF1=30, p=0.3
+      -> v_op=8, F=1250, EF1=30, p=0.4
+      -> v_op=8, F=1250, EF1=30, p=0.5
+      -> v_op=8, F=1250, EF1=30, p=0.6
+      -> v_op=8, F=1250, EF1=30, p=0.7
+      -> v_op=8, F=1250, EF1=60, p=0.1
+  [SE MANTIENE en todo el grid] S2_cap sin perdedores de coste
+  [SE MANTIENE en todo el grid] S2_cap no encarece vs S2 (Coste_S2_cap >= Coste_S2 − tol)
+  [SE MANTIENE en todo el grid] S2_cap no reduce el recorte de CO2 por debajo del directo de S2 (CO2_S2_cap >= CO2_S2 − tol)
+  [SE MANTIENE en todo el grid] S3 sin perdedores de coste
+  [SE MANTIENE en todo el grid] S3 cubre al menos a S2 (n_onsite_S3 >= n_onsite_S2)
+  [SE MANTIENE en todo el grid] S3 no encarece vs S2 (Coste_S3 <= Coste_S2 + tol)
+  [SE MANTIENE en todo el grid] S3 reduce CO2 al menos como S2 (CO2_S3 <= CO2_S2 + tol)
+
+CONCLUSIÓN DE ROBUSTEZ:
+  Estructuralmente se mantiene: S2/S2_cap/S3 sin perdedores y S2/S3 <= S1 en coste; S1 único mínimo de CO2 a costa de perdedores locales. Matices:
+  - 'S1 encarece regionalmente' falla en 168/378 combos (on-site barato con F/v_op bajos): S1 más barato que S0 en agregado, pero con 52–381 municipios perdedores que subvencionan el ahorro. Pares (v_op,F): [('v_op=10', 'F=1250'), ('v_op=10', 'F=2500'), ('v_op=10', 'F=5000'), ('v_op=12', 'F=1250'), ('v_op=12', 'F=2500'), ('v_op=12', 'F=5000'), ('v_op=14', 'F=1250'), ('v_op=14', 'F=2500'), ('v_op=16', 'F=1250'), ('v_op=8', 'F=1250'), ('v_op=8', 'F=2500'), ('v_op=8', 'F=5000')]
+====================================================================================================
+PARTE 0 — VERIFICACION NUMERICA DE MONOTONIA (config base, barrido p 0.05..1.00)
+  S1: coste no creciente = True (min delta -172.2 k€/paso, max -172.2 k€/paso); CO2 no creciente = True (min -117.59 t/paso, max -117.59 t/paso)
+  S2: coste no creciente = True (min delta -170.0 k€/paso, max -64.2 k€/paso); CO2 no creciente = True (min -111.09 t/paso, max -53.96 t/paso)
+  S2_cap: coste no creciente = True (min delta -160.8 k€/paso, max -64.2 k€/paso); CO2 no creciente = True (min -111.09 t/paso, max -8.37 t/paso)
+  S3: coste no creciente = True (min delta -178.3 k€/paso, max -170.3 k€/paso); CO2 no creciente = True (min -95.74 t/paso, max -90.14 t/paso)
+  RESULTADO: la serie S2 (fig1) es ABIERTA y MONOTONA (coste y CO2 decrecientes con p) en la config base. El 'bucle' era un artefacto de dibujo (flecha anotada superpuesta a la serie + textos), no de los datos: se traza S2 ordenada por p creciente sin cerrar poligono y sin la flecha gruesa.
+====================================================================================================
+PARTE 2 — RESTRICCION DE CAPACIDAD ANUAL (S2 vs S2_cap), config base, p=0.5:
+  CAP=   50,000 t/año | p=0,5: S2 on-site 177 (vol    163,122 t) -> S2_cap on-site  47 (vol     49,918 t) | coste   9.340 vs   8.929 M€ (Δ +0.411) | CO2  2,218 vs  1,750 t (Δ +468) | perdedores 0 | capacidad VINCULA: SI
+  CAP=  100,000 t/año | p=0,5: S2 on-site 177 (vol    163,122 t) -> S2_cap on-site 104 (vol     99,966 t) | coste   9.052 vs   8.929 M€ (Δ +0.123) | CO2  1,997 vs  1,750 t (Δ +246) | perdedores 0 | capacidad VINCULA: SI
+  CAP=  200,000 t/año | p=0,5: S2 on-site 177 (vol    163,122 t) -> S2_cap on-site 177 (vol    163,122 t) | coste   8.929 vs   8.929 M€ (Δ +0.000) | CO2  1,750 vs  1,750 t (Δ +0) | perdedores 0 | capacidad VINCULA: NO
+  CAP=  400,000 t/año | p=0,5: S2 on-site 177 (vol    163,122 t) -> S2_cap on-site 177 (vol    163,122 t) | coste   8.929 vs   8.929 M€ (Δ +0.000) | CO2  1,750 vs  1,750 t (Δ +0) | perdedores 0 | capacidad VINCULA: NO
+[ok] sensibilidad de capacidad -> results/sensibilidad_capacidad.csv
+====================================================================================================
+PARTE 1 — APARTADO EF5_NA x rec_share (config base; credito solo si rec_onsite > rec_base; S0 no recibe credito: termino diferencial)
+  p=0,5 | EF5_NA=2 | rec 0.6/0.85 (Δrec=+0.25): CO2_S2 =   1,832 t (credito   81.6 t) | perdedores 0
+  p=0,5 | EF5_NA=2 | rec 0.6/0.6 (Δrec=+0.00): CO2_S2 =   1,913 t (credito    0.0 t) | perdedores 0
+  p=0,5 | EF5_NA=2 | rec 0.4/0.85 (Δrec=+0.45): CO2_S2 =   1,767 t (credito  146.8 t) | perdedores 0
+  p=0,5 | EF5_NA=2 | rec 0.85/0.85 (Δrec=+0.00): CO2_S2 =   1,913 t (credito    0.0 t) | perdedores 0
+  p=0,5 | EF5_NA=2 | rec 0.6/1 (Δrec=+0.40): CO2_S2 =   1,783 t (credito  130.5 t) | perdedores 0
+  p=0,5 | EF5_NA=4 | rec 0.6/0.85 (Δrec=+0.25): CO2_S2 =   1,750 t (credito  163.1 t) | perdedores 0
+  p=0,5 | EF5_NA=4 | rec 0.6/0.6 (Δrec=+0.00): CO2_S2 =   1,913 t (credito    0.0 t) | perdedores 0
+  p=0,5 | EF5_NA=4 | rec 0.4/0.85 (Δrec=+0.45): CO2_S2 =   1,620 t (credito  293.6 t) | perdedores 0
+  p=0,5 | EF5_NA=4 | rec 0.85/0.85 (Δrec=+0.00): CO2_S2 =   1,913 t (credito    0.0 t) | perdedores 0
+  p=0,5 | EF5_NA=4 | rec 0.6/1 (Δrec=+0.40): CO2_S2 =   1,652 t (credito  261.0 t) | perdedores 0
+  p=0,5 | EF5_NA=8 | rec 0.6/0.85 (Δrec=+0.25): CO2_S2 =   1,587 t (credito  326.2 t) | perdedores 0
+  p=0,5 | EF5_NA=8 | rec 0.6/0.6 (Δrec=+0.00): CO2_S2 =   1,913 t (credito    0.0 t) | perdedores 0
+  p=0,5 | EF5_NA=8 | rec 0.4/0.85 (Δrec=+0.45): CO2_S2 =   1,326 t (credito  587.2 t) | perdedores 0
+  p=0,5 | EF5_NA=8 | rec 0.85/0.85 (Δrec=+0.00): CO2_S2 =   1,913 t (credito    0.0 t) | perdedores 0
+  p=0,5 | EF5_NA=8 | rec 0.6/1 (Δrec=+0.40): CO2_S2 =   1,391 t (credito  522.0 t) | perdedores 0
+  [nota] con rec_onsite=rec_base (0,6/0,6) el credito es 0: el modelo reproduce v1. Base v2 (0,6/0,85, EF5_NA=4) resta ~163 t CO2/año a S2 (p=0,5).
+[ok] sensibilidad EF5/rec_share -> results/sensibilidad_EF5_recshare.csv
+====================================================================================================
+PARTE 4 — SENSIBILIDAD A p (config base; p = 0.05..1.00) -> p_sensibilidad.csv
+[ok] p_sensibilidad -> results/p_sensibilidad.csv
+  Crossover S1−S0 (coste): p* ≈ 0.278 (S1 deja de encarecer frente a S0 a partir de p≈0.28; Δ(p=1,0) = -2.487 M€/año)
+  Saturacion CAP=200,000 t: demanda S2 > CAP a partir de p ≈ 0.593 (vol S2 en p=1,0: 366,158 t)
+    En p=1,0: S2_cap on-site en 149 municipios (S2 sin cap: 250); volumen 199,926 t ≈ CAP
+  Frontera eficiente (puntos no dominados, tol 1 € / 1e-6 t): 2 de 81
+    p=1.00 S3      coste   6.566 M€/año  CO2     696 t/año
+    p=1.00 S1      coste   7.572 M€/año  CO2     165 t/año
+  Extremos: menor coste = S3 p=1.00 (6.566 M€/año); menor CO2 = S1 p=1.00 (165 t/año)
+
+[ok] figuras PNG en /Users/fernando/Universidad/Investigacion/otras_ideas/sustainability/A09_envio_Fernando_20260908/draft/public_repo/results
+  - fig1_frontera_costes_CO2.png
+  - fig2_perdedores_S1_y_ahorro_S2.png
+  - fig3_mapas_S0_y_S2.png
+  - fig4_p_sensibilidad.png

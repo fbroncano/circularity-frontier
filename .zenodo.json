@@ -1,0 +1,57 @@
+{
+  "title": "Circularity Frontier: per-capita cost and CO2 indicators of the construction and demolition waste loop and on-site recycling scenarios, Extremadura, Spain",
+  "description": "Model, input data and figure code accompanying the manuscript 'Selective On-Site Recycling Removes the Equity Cost of Construction Waste Mandates in Low-Density Regions'. For each of the 383 municipalities of Extremadura (32 CDW plant groups over the real road network) it builds per-capita cost (EUR/inhab/yr) and CO2 (kg/inhab/yr) indicators of the CDW loop and evaluates on-site (mobile) crushing scenarios against the plant-based baseline: S0 current system, S1 blanket mandate, S2 selective by Pareto dominance, S2_cap with an annual fleet capacity, and S3 with cluster-shared mobile units. Includes a 378-combination sensitivity grid (v_op x F x EF1 x p) and a penetration sweep. Pure Python standard library; matplotlib is required only for the figures. Input data are derived from the open-access article Torrecilla-Pinero et al., Waste Management Bulletin 4 (2026) 100355, DOI 10.1016/j.wmb.2026.100355, CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Broncano, Fernando",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0009-0001-8104-6232"
+    },
+    {
+      "name": "Plaza-Caballero, Pablo",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0003-2844-5530"
+    },
+    {
+      "name": "Cuartero, Aurora",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0002-0219-9696"
+    },
+    {
+      "name": "Ceballos-Martinez, Jose M.",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0002-9951-4751"
+    },
+    {
+      "name": "Torrecilla-Pinero, Jesus A.",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0001-9406-1100"
+    }
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "version": "1.0.0",
+  "keywords": [
+    "construction and demolition waste",
+    "CDW",
+    "circular economy",
+    "on-site recycling",
+    "mobile crushing",
+    "spatial cost analysis",
+    "CO2 emissions",
+    "per-capita indicators",
+    "sensitivity analysis",
+    "Extremadura",
+    "Spain"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.wmb.2026.100355",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    }
+  ]
+}
