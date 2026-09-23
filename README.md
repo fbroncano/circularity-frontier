@@ -1,10 +1,10 @@
-# A09 Circularity Frontier — Selective On-Site Recycling and the Equity Cost of CDW Mandates
+# Circularity Frontier — Selective On-Site Recycling and the Equity Cost of CDW Mandates
 
 Per-capita cost and CO2 indicators of the construction and demolition waste (CDW) loop, and a
 scenario model of **on-site (mobile) recycling** for the 383 municipalities of Extremadura
 (SW Spain), assigned to 32 CDW treatment plant groups over the real road network.
 
-This repository is the public, self-contained companion of the manuscript *"Selective On-Site Recycling Removes the Equity Cost of Construction Waste Mandates in Low-Density Regions"* (A09),
+This repository is the public, self-contained companion of the manuscript *"Selective On-Site Recycling Removes the Equity Cost of Construction Waste Mandates in Low-Density Regions"*,
 submitted to *Resources, Conservation & Recycling*. It is released to support the
 manuscript's Data Availability statement.
 
@@ -39,7 +39,7 @@ LC_m (€/inhab·yr) = (C_trat,m + C_trans,m + 0.35 · d_obra) · 0.5
 CE_m (kg/inhab·yr) = 0.5 · (EF1 · d_tot,m + E_PLANT)
 ```
 
-where `0.35` €/(t·km) is the A01 transport tariff, `EF1` the truck emission factor and
+where `0.35` €/(t·km) is the transport tariff of the source article, `EF1` the truck emission factor and
 `E_PLANT` the stationary plant factor. On-site crushing of the volume `V_m = G_m · p` costs
 `c_b = F/(G_m·p) + v_op` €/t (S1/S2; `F` shared over the cluster pool in S3) and emits EF3;
 mixed per-capita indicators follow `LC_m(p) = p·c_b·0.5 + (1−p)·LC_m` and
@@ -51,7 +51,7 @@ tested over a 378-combination grid (`v_op × F × EF1 × p`; see `results/`).
 ## Data provenance
 
 - `data/datos_red_real_municipios.csv` is a **derived, anonymised** dataset of the municipal
-  file published with A01: Torrecilla-Pinero, J.A., Ceballos-Martínez, J.M., Plaza Caballero,
+  file published with the source article: Torrecilla-Pinero, J.A., Ceballos-Martínez, J.M., Plaza Caballero,
   P., Cruces López, A., Cuartero, A. (2026). *Spatial cost inequality in construction and
   demolition waste management in sparsely populated regions: Evidence from Extremadura,
   Spain*. Waste Management Bulletin 4(3):100355, DOI
@@ -72,7 +72,7 @@ tested over a 378-combination grid (`v_op × F × EF1 × p`; see `results/`).
 │   ├── model_sensibilidad.py       # model + sensitivity analysis (Python ≥3.8, stdlib only)
 │   └── fig3_mapas.py               # figure 3, municipal maps (needs matplotlib)
 ├── data/
-│   ├── datos_red_real_municipios.csv   # anonymised municipal input (CC BY 4.0, from A01)
+│   ├── datos_red_real_municipios.csv   # anonymised municipal input (CC BY 4.0, from the source article)
 │   ├── blender_data.json           # municipal polygons and regional outline (figure 3)
 │   └── README.md                   # provenance, licence and anonymisation note
 └── results/
@@ -138,12 +138,12 @@ and (with matplotlib) the PNG figures used in the manuscript. Column definitions
 ## License
 
 - **Code** (this repository's scripts): MIT — see `LICENSE`.
-- **Data** (`data/datos_red_real_municipios.csv`): CC BY 4.0 (derived from A01,
+- **Data** (`data/datos_red_real_municipios.csv`): CC BY 4.0 (derived from Torrecilla-Pinero et al., 2026,
   DOI 10.1016/j.wmb.2026.100355). See `data/README.md`.
 
 ## How to cite
 
-If you use this repository, please cite (1) the article, (2) the A01 source dataset, and
+If you use this repository, please cite (1) the article, (2) the source dataset, and
 (3) this software release:
 
 > Broncano, F., Plaza-Caballero, P., Cuartero, A., Ceballos-Martínez, J.M.,

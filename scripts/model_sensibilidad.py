@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""model_sensibilidad.py — A09 modelo de sensibilidad completo, v2 (2026-09-04).
+"""model_sensibilidad.py — modelo de sensibilidad completo, v2 (2026-09-04).
 
 Implementa los objetivos per cápita por municipio y los escenarios S0/S1/S2 del
 prototipo a09_proto.py, con métricas REGIONALES corregidas (ponderadas por

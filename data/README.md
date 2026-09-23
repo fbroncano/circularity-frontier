@@ -3,7 +3,7 @@
 ## File: `datos_red_real_municipios.csv`
 
 One row per municipality (383 municipalities of Extremadura, Spain), derived from the
-municipal file published with the open-access source article A01 (see provenance below).
+municipal file published with the open-access source article (see provenance below).
 Field layout (anonymised, see note):
 
 | Column | Description | Units |
@@ -14,7 +14,7 @@ Field layout (anonymised, see note):
 | `distancia_km` | Road-network distance from the municipality to its assigned plant group | km |
 | `produccion_t` | Annual CDW generation (`0.5 t/(inhab·yr) × poblacion`) | t/yr |
 | `tkm` | Transport intensity (`produccion_t × distancia_km`) | t·km |
-| `C_trans` | Unit transport cost at the A01 tariff of 0.35 €/(t·km) | €/t |
+| `C_trans` | Unit transport cost at the source-article tariff of 0.35 €/(t·km) | €/t |
 | `C_trat` | Unit treatment cost at the plant | €/t |
 | `C_tot` | Total unit cost reported by the source dataset (`C_trans + C_trat` plus any fixed surcharge) | €/t |
 
@@ -23,7 +23,7 @@ C_trans`; the remaining columns are kept for transparency and reuse.
 
 ## Provenance and licence
 
-Source: **A01** — Torrecilla-Pinero, J.A., Ceballos-Martínez, J.M., Plaza Caballero, P.,
+Source: Torrecilla-Pinero, J.A., Ceballos-Martínez, J.M., Plaza Caballero, P.,
 Cruces López, A., Cuartero, A. (2026). *Spatial cost inequality in construction and demolition
 waste management in sparsely populated regions: Evidence from Extremadura, Spain*. Waste
 Management Bulletin, 4(3), 100355.
@@ -41,7 +41,7 @@ please attribute the source article above (and cite this repository, see the mai
   **confidential** and were **removed** from this public release.
 - `planta_id` is retained as an anonymous key (integer only, no operator name) so that the
   municipality-to-plant assignment, distances and cost structure remain fully reproducible.
-  Note that the assignment itself is published in the open-access A01 article, so an
+  Note that the assignment itself is published in the open-access source article, so an
   interested reader could re-identify operators from that source.
 - Minor cleaning: three municipality names contained a corrupted character (non-breaking
   space) from a legacy encoding and were restored to their proper accented form

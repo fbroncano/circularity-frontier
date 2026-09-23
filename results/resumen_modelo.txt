@@ -179,7 +179,7 @@ PARTE 4 — SENSIBILIDAD A p (config base; p = 0.05..1.00) -> p_sensibilidad.csv
     p=1.00 S1      coste   7.572 M€/año  CO2     165 t/año
   Extremos: menor coste = S3 p=1.00 (6.566 M€/año); menor CO2 = S1 p=1.00 (165 t/año)
 
-[ok] figuras PNG en /Users/fernando/Universidad/Investigacion/otras_ideas/sustainability/A09_envio_Fernando_20260908/draft/public_repo/results
+[ok] figuras PNG en results/
   - fig1_frontera_costes_CO2.png
   - fig2_perdedores_S1_y_ahorro_S2.png
   - fig3_mapas_S0_y_S2.png
